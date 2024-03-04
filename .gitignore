@@ -1,5 +1,10 @@
 .virtual_documents
 
+# Dataset
+Dataset/*
+
+# Model (LLaVA-Med)
+Model/*
 
 ### JupyterNotebooks ###
 # gitignore template for Jupyter Notebooks
