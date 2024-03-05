@@ -1,0 +1,5 @@
+모델을 로컬에서 각자 저장해두는 디렉토리
+.gitignore을 통해 커밋이 안 되도록 함.
+
+1. LLaMA 7B weight
+2. LLaVA-Med SLAKE fine-tuned
