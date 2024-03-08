@@ -3,6 +3,7 @@
 # Dataset
 Dataset/**
 !Dataset/dataset_dir.txt
+isip.piconepress.com
 
 # Model (LLaVA-Med)
 ModelWeights/**
