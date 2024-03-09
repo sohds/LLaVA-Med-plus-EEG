@@ -166,6 +166,7 @@ class LlamaConfig(PretrainedConfig):
         self._rope_scaling_validation()
         self.attention_bias = attention_bias
         self.attention_dropout = attention_dropout
+        self._attn_implementation = 'eager' # 추가한 부분
 
         super().__init__(
             pad_token_id=pad_token_id,

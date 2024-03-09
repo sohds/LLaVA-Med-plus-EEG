@@ -723,6 +723,10 @@ class LlamaDecoderLayer(nn.Module):
         super().__init__()
         self.hidden_size = config.hidden_size
 
+        # LLaMA의 Decoder Layer에서 Attention 메커니즘을 어떻게 가져갈 것인가를 고르는 부분
+        # 하지만, Configuration 쪽에는 _attn_implementation이 없다.
+        # LlamaConfig, 이걸 상속해준 PretrainedConfig도 마찬가지
+        
         self.self_attn = LLAMA_ATTENTION_CLASSES[config._attn_implementation](config=config, layer_idx=layer_idx)
 
         self.mlp = LlamaMLP(config)
