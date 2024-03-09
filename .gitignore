@@ -1,3 +1,11 @@
+# pycache file
+*.pyc
+Model/__pycache__/**
+Model/llama/__pycache__/**
+Model/transformers_not_downloaded/__pycache__/**
+Model/transformers_not_downloaded/utils/__pycache__/**
+
+
 .virtual_documents
 
 # Dataset
